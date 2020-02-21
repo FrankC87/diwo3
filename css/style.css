@@ -1,0 +1,543 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #999999;
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana;
+}
+
+/*SECCION PRINCIPAL DE LA PAGINA*/
+section#principal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/*main de la seccion principal*/
+main {
+  width: 75%;
+  height: 100%;
+  margin-right: 2.5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*estructura de cabecera del main*/
+header {
+  height: 198px;
+  background-color: #02468a;
+  color: white;
+}
+
+header .checkbox {
+  display: none;
+}
+
+header>#titulo {
+  height: 60%;
+  padding: 3%;
+}
+/*Logo de la cabecera*/
+header>#titulo>#titulo_logo {
+  width: 20%;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+#titulo_logo img {
+  margin: auto;
+  
+}
+/*Nombre o marca principal de la cabecera*/
+header>#titulo>#titulo_nombre {
+  width: 60%;
+  height: 100%;
+  font-size: 1.25vw;
+  font-weight: bold;
+  float: left;
+  display: flex;
+  justify-content: center;
+}
+
+#titulo_nombre p {
+  margin: auto;
+  text-align: center;
+}
+/*Selector de idiomas de la cabecera*/
+header>#titulo>#titulo_idioma {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+}
+
+#titulo_idioma>#selector {
+  margin: auto;
+  background-color: #999999;
+  border-radius: 5px;
+}
+
+header>nav {
+  height: 20%;
+  background-color: #003366;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.nav__item{
+  font-weight: bold;
+  color:white;
+  margin-left: 5px;
+  width:auto;
+  font-size: 12px;
+  text-decoration:none; 
+}
+header>#contenido {
+  height: 20%;
+  background-color: #0099cc;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/*SECCION DE CONTENIDOS TEMATICOS*/
+section#tematicos {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#tematicos_primera,
+#tematicos_segunda {
+  width: 100%;
+  padding: 2.5px;
+  display: flex;
+  flex-direction: row;
+}
+
+#tematicos_primera>article.oferta {
+  width: 49%;
+}
+
+#tematicos_segunda>article.oferta {
+  width: 32.5%;
+}
+
+/*CLASE USADA PARA LOS BLOQUES TEMATICOS*/
+.oferta {
+  padding: 5px;
+  height: 100%;
+  border: 1px solid #999999;
+  border-radius: 1px;
+  margin: 2.5px;
+}
+
+.oferta>img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.oferta .parrafo_oferta {
+  font-size: 10px;
+  text-align: justify;
+  margin-bottom: 5px;
+  color: #003366;
+}
+
+.oferta>ul>li {
+  color: #0099cc;
+  font-weight: bold;
+  font-size: 11px;
+  list-style: none;
+}
+
+.oferta>ul>li>img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+/*clase usada para los titulos de nivel 2*/
+.titulo2 {
+  color: #0099cc;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/*LATERAL DERECHO DE LA PAGINA*/
+aside {
+  width: 25%;
+  height: 100%;
+  margin-left: 2.5px;
+  padding: 5px;
+  background-color: #cccccc;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*bloques del aside*/
+.bloque {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 0px solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*Bloque de Busqueda*/
+#buscador {
+  border-color: #999999;
+  border-width: 1px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px #666666;
+}
+
+#buscador #caja_busqueda {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+#buscador input[type="search"] {
+  border-radius: 10px;
+  height: 100%;
+  width: 85%;
+  position: absolute;
+  z-index: 1;
+}
+
+#buscador button {
+  background-color: #999999;
+  width: 100%;
+  padding: 5%;
+  position: relative;
+  float: right;
+  z-index: 0;
+}
+
+#buscador button img {
+  height: 10px;
+  width: auto;
+  float: right;
+}
+
+#opcion_seleccion {
+  float: left;
+  font-size: 10px;
+  color: #999999;
+}
+
+#seleccion input {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/*Bloque de acceso*/
+#acceso {
+  background-color: #999999;
+  padding: 10px;
+}
+
+#acceso p {
+  color: #003366;
+  font-weight: bold;
+  width: 80%;
+  float: left;
+  font-size: 12px;
+}
+
+#acceso img {
+  width: 20%;
+  float: right;
+  height: 18px;
+}
+
+/*Bloque de redes sociales*/
+#redes>#logos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+#redes>#logos>img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+/*Bloque de portadas de contenido*/
+#portadas {
+  background-color: #666666;
+  padding: 8px;
+}
+
+#portadas>p {
+  margin-bottom: 5px;
+  color: #0099cc;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+#portadas>hr {
+  margin-bottom: 5px;
+  color: white;
+  border-style: dashed;
+  width: 70%;
+}
+
+/*Bloque destacados*/
+#destacados {
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+#destacados>#cabecera_destacados {
+  display: flex;
+  flex-direction: row;
+}
+
+#destacados>#cuerpo_destacados {
+  font-size: 10px;
+  text-align: justify;
+}
+
+#cuerpo_destacados>p {
+  font-size: 10px;
+  margin-bottom: 5px;
+  color: #003366;
+}
+
+#cuerpo_destacados>hr {
+  margin-bottom: 5px;
+  color: #0099cc;
+  border-style: dashed;
+  width: 70%;
+}
+
+/*Bloque multimedia*/
+#multimedia>iframe {
+  margin-top: 5px;
+  width: 100%;
+}
+
+/*bloque banners*/
+
+#banners img{
+  width: 100%;
+  margin:auto;
+}
+
+/*PIE DE PAGINA*/
+footer {
+  max-height:100px;
+  background-color: white;
+  border-top: solid #0099cc;
+  border-top-width: 5px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  
+}
+footer img{
+  max-height:100px;
+  padding:1px;
+  max-width: 20%;
+  margin:auto;
+}
+
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+/*************************************************************************************************************/
+/*AJUSTES PARA AMPLITUD DE UN MAXIMO 480px*/
+
+@media all and (max-width: 480px) {
+  section#principal {
+    flex-direction: column;
+  }
+
+  header>#titulo {
+    height: 80%;
+  }
+
+  header>#titulo>#titulo_logo {
+    width: 20%;
+    height: 70%;
+  }
+
+  header>#titulo>#titulo_nombre {
+    width: 80%;
+    height: 70%;
+  }
+
+  header>#titulo>#titulo_nombre p {
+    font-size: 2em;
+  }
+
+  header>#titulo>#titulo_idioma {
+    width: 100%;
+    height: 30%;
+    float: bottom;
+  }
+
+  #tematicos_primera>article.oferta,
+  #tematicos_segunda>article.oferta {
+    width: 98%;
+  }
+
+  #tematicos_primera,
+  #tematicos_segunda {
+    flex-direction: column;
+  }
+
+  aside,
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .oferta>img {
+    display: none;
+  }
+
+  /*CODIGO HAMBURGESA OBTENIDO DE https://codepen.io/Gugor/pen/xbGMPy */
+  .nav {
+    position: absolute;
+    width: 200px;
+    height: 220px;
+    top: 0;
+    left: -220px;
+    /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+    padding-top: 47px;
+    background-color: rgba(29, 33, 32, 1);
+    border-right: 4px solid #0099cc;
+    transition: all 0.5s ease;
+    padding-right: 0px;
+    /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/
+  }
+
+  /*Estilos de los li del menú*/
+  .nav__item {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+    line-height: 2;
+    position: relative;
+    /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+    border-bottom: 0.5px solid rgba(59, 62, 61, 1);
+    border-top: 0.5px solid rgba(59, 62, 61, 1);
+    background-color: transparent;
+    font-family: "Lato", Verdana;
+    text-align: center;
+    color: rgba(221, 231, 228, 1);
+  }
+
+  /*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+  .current:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+    border-top: 17px solid transparent;
+    border-left: 15px solid #1d2120;
+    border-bottom: 17px solid transparent;
+    top: 0px;
+    right: -15px;
+    /*Lo posicionamos -15px a la derecha de su contenedor*/
+    z-index: 4;
+    /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/
+  }
+
+  /*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+  .current:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    /*Le damos al after una posición absoluta relativa al li que lo contiene*/
+    border-top: 16.5px solid transparent;
+    border-left: 17px solid #0099cc;
+    border-bottom: 17px solid transparent;
+    top: 0.5px;
+    right: -21px;
+    z-index: 1;
+    /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/
+  }
+
+  /*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+  .menu-toogle {
+    position: absolute;
+    /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+    width: 35px;
+    line-height: 1.1;
+    text-align: center;
+    top: 6.5px;
+    /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+    left: 8px;
+    border-radius: 3px;
+    background-color: #142b25;
+    transition: all 0.5s ease;
+    /*Añadimos una transición para que realice un desplazamineto suave*/
+    z-index: 10;
+  }
+
+  /*Añadimos la haburguesa y le damos unos estilos*/
+  .menu-toogle::before {
+    content: "☰";
+    font-size: 32px;
+    color: white;
+  }
+
+  /*Estos son los estilos que le dan la funcionalidad al menú*/
+  /*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+  .checkbox {
+    display: none;
+    /*Ocultamos el checkbox pues no nos interesa que se vea*/
+  }
+
+  .checkbox:checked~.nav {
+    left: 0px;
+    /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+    position: fixed;
+    /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/
+  }
+
+  .checkbox:checked~.main-w {
+    margin-left: 200px;
+    /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/
+  }
+
+  .checkbox:checked~.menu-toogle {
+    left: 208px;
+    position: fixed;
+    /*Fijamos la hamburgues para que se desplace junto con el menú*/
+  }
+}

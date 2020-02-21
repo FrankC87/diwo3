@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section id="principal">
+    <main>
+      <header>
+        <div id="titulo">
+          <div id="titulo_logo">
+            <img src="img/logo.svg" alt="logotipo" />
+          </div>
+          <div id="titulo_nombre">
+            <p>UNIVERSIDAD DE MALAGA<br/>
+            Campus de Excelencia Internacional</p> 
+          </div>
+          <div id="titulo_idioma">
+            <select name="idioma" id="selector">
+              <option value="ES">es&emsp;idioma</option>
+            </select>
+          </div>
+        </div>
+        <input type="checkbox" class="checkbox" id="menu-toogle"/>
+        <label for="menu-toogle" class="menu-toogle"></label>
+        <nav class="nav">
+          <a href="#" class="nav__item current">INICIO</a>
+          <a href="#" class="nav__item">CONTACTA</a>
+          <a href="#" class="nav__item">CAMPUS</a>
+          <a href="#" class="nav__item">INTERNACIONAL</a>
+          <a href="#" class="nav__item">NOSOTROS</a>
+        </nav>
+        <div id="contenido">Oferta academica >></div>
+      </header>
+      <section id="tematicos">
+        <div id="tematicos_primera">
+          <article class="oferta">
+            <img src="img/b1.jpg" alt="imagen bloques" />
+            <p class="titulo2">GRADO</p>
+            <p class="parrafo_oferta">
+              Contamos con un extenso mapa de titulaciones de excelencia
+              acreditada, adaptadas al sistema europeo de creditos.
+            </p>
+            <ul>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Oferta de Grado
+              </li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Escuelas y Facultades
+              </li>
+            </ul>
+          </article>
+          <article class="oferta">
+            <img src="img/b2.jpg" alt="imagen bloques" />
+            <p class="titulo2">POSTGRADO</p>
+            <p class="parrafo_oferta">
+              El centro internacional de Posgrado y Escuela de Doctorado de la
+              UMA forma con excelencia a profesionales e investigadores
+              pensando en el mercado laboral.
+            </p>
+            <ul>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Masteres Oficiales
+              </li>
+              <li><img src="img/flecha.svg" alt="flecha" />Doctorado</li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Escuela de Doctorado
+              </li>
+            </ul>
+          </article>
+        </div>
+        <div id="tematicos_segunda">
+          <article class="oferta">
+            <img src="img/b3.jpg" alt="imagen bloques" />
+            <p class="titulo2">ENSEÑANZAS PROPIAS</p>
+            <p class="parrafo_oferta">
+              Fomentamos la formalizacion especializada mediante las
+              titulaciones propias como un valor añadido para la isercion
+              profesional de nuestros estudiantes.
+            </p>
+            <ul>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />titulaciones Propias
+              </li>
+            </ul>
+          </article>
+          <article class="oferta">
+            <img src="img/b4.jpg" alt="imagen bloques" />
+            <p class="titulo2">IDIOMAS</p>
+            <p class="parrafo_oferta">
+              La UMA cuenta con numerosos programas para aprender idiomas, asi
+              como cursos de español para extranjeros.
+            </p>
+            <ul>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Centro de Idiomas
+              </li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Español para
+                extranjeros
+              </li>
+            </ul>
+          </article>
+          <article class="oferta">
+            <img src="img/b5.jpg" alt="imagen bloques" />
+            <p class="titulo2">OTROS ESTUDIOS</p>
+            <p class="parrafo_oferta">Para la comunidad universitaria y la sociedad en general.</p>
+            <ul>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Cursos de Verano
+                Universidad-Empresa
+              </li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Cursos de Verano
+                Fundacion
+              </li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Cursos de Otoño
+              </li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Aula de Mayores
+              </li>
+              <li>
+                <img src="img/flecha.svg" alt="flecha" />Cursos de preparacion
+                mayores de 25 y 45 años
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+    <!-- Aside que contendra los bloques que se mostraran a la derecha de la pagina-->
+    <aside>
+      <!--Bloque de Buscador-->
+      <div id="buscador" class="bloque">
+        <div id="caja_busqueda">
+          <input type="search" name="busqueda" />
+          <button><img src="img/buscar.svg" alt="buscar" /></button>
+        </div>
+        <div id="seleccion">
+          <div id="opcion_seleccion"><input type="radio" name="tipo"><label for="tipo">Personas</label></div>
+          <div id="opcion_seleccion"><input type="radio" name="tipo"><label for="tipo">Contenido</label></div>
+        </div>
+      </div>
+      <!--Bloque de Acceso-->
+      <div id="acceso" class="bloque">
+        <p>IDENTIFICATE</p>
+        <img src="img/candado.svg" alt="candado"/>
+      </div>
+      <!--Bloque de Redes sociales-->
+      <div id="redes" class="bloque">
+        <p class="titulo2">UMA SOCIAL</p>
+        <div id="logos">
+          <img src="img/facebook.svg" alt="facebook" />
+          <img src="img/instagram.svg" alt="instagram" />
+          <img src="img/skype.svg" alt="skype" />
+          <img src="img/youtube.svg" alt="youtube" />
+        </div>
+      </div>
+      <!--Bloque de portadas de contenido-->
+      <div id="portadas" class="bloque">
+        <p>EMPRESAS</p>
+        <hr />
+        <p>FUTUROS ALUMNOS</p>
+        <hr />
+        <p>ESTUDIANTES EXTRANJEROS</p>
+      </div>
+      <!--Bloque de contenido destacado-->
+      <div id="destacados" class="bloque">
+        <div id="cabecera_destacados">
+          <img src="img/boli.svg" alt="boli" height="18px" />
+          <p class="titulo2">DESTACADOS</p>
+        </div>
+        <div id="cuerpo_destacados">
+          <p>Cursos online Universidad-Empresa</p>
+          <hr />
+          <p>Practicas en empresa</p>
+          <hr />
+          <p>Calendario oficial curso 2012-2013</p>
+          <hr />
+          <p>Ver todo</p>
+        </div>
+      </div>
+      <!--Bloque multimedia-->
+      <div id="multimedia" class="bloque">
+        <p class="titulo2">VIDEOS</p>
+        <iframe src="https://www.youtube.com/embed/24gNhTcy6pw" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <!--Bloque de banners-->
+      <div id="banners" class="bloque">
+        <img class="banner1" src="img/banner1.jpg" alt="banner1"/>
+        <img class="banner2" src="img/banner2.jpg" alt="banner2"/>
+      </div>
+    </aside>
+  </section>
+  <!--Pie de pagina/Bloque de logos-->
+  <footer>
+    <img src="img/logo.svg" alt="logotipo" />
+    <img src="img/logo.svg" alt="logotipo" />
+    <img src="img/logo.svg" alt="logotipo" />
+    <img src="img/logo.svg" alt="logotipo" />
+    <img src="img/logo.svg" alt="logotipo" />
+  </footer>
+</body>
+
+</html>
